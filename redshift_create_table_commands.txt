@@ -9,7 +9,7 @@ CREATE TABLE airlines.airports_dim (
 
 COPY airlines.airports_dim
 FROM 's3://airlines-dataset-gds/airports.csv' 
-IAM_ROLE 'arn:aws:iam::348532040329:role/service-role/AmazonRedshift-CommandsAccessRole-20230820T081203'
+IAM_ROLE 'arn:aws:iam::629734020165:role/service-role/AmazonRedshift-CommandsAccessRole-10980765T082103'
 DELIMITER ','
 IGNOREHEADER 1
 REGION 'us-east-1';
