@@ -65,7 +65,7 @@
       "Type": "Task",
       "Resource": "arn:aws:states:::sns:publish",
       "Parameters": {
-        "TopicArn": "arn:aws:sns:us-east-1:xxxxxxxxx:first_sns",
+        "TopicArn": "arn:aws:sns:us-east-1:xxxxxxxxx:sns_monitor_status",
         "Message": "Glue Job Execution Successful !!"
       },
       "End": true
@@ -75,7 +75,7 @@
       "Resource": "arn:aws:states:::sns:publish",
       "Parameters": {
         "Message.$": "$",
-        "TopicArn": "arn:aws:sns:us-east-1:xxxxxxxxx:first_sns"
+        "TopicArn": "arn:aws:sns:us-east-1:xxxxxxxxx:sns_monitor_status"
       },
       "End": true
     }
